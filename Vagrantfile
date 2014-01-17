@@ -15,6 +15,8 @@ nodes = {
 }
 
 Vagrant.require_plugin('vagrant-hostmanager')
+Vagrant.require_plugin('vagrant-vbguest')
+Vagrant.require_plugin('vagrant-omnibus')
 
 Vagrant.configure('2') do |config|
   config.vm.box = 'precise64'
